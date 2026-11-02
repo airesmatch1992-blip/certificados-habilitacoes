@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Certificados de Habilitações</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<!-- Biblioteca para ler/gravar Excel (o instalador guarda-a localmente se houver internet; sem ela, CSV e JSON continuam a funcionar) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head><body>
+<div id="lg" class="lw" hidden></div>
+<div id="app" hidden>
+  <header class="bar">
+    <div class="brand"><span class="lg">🎓</span><div><b>Certificados de Habilitações</b><small id="esc"></small></div></div>
+    <nav id="nav"></nav><div class="usr" id="usr"></div>
+  </header>
+  <main id="pg"></main>
+</div>
+<input type="file" id="fi" accept=".xlsx,.xlsm,.csv,.json" hidden>
+<dialog id="fm"></dialog><dialog id="xm"></dialog><dialog id="cf"></dialog>
+<div id="co" class="ov" hidden><div class="otb"><button class="b pri" id="cp" data-a="cp">🖨 Imprimir</button><button class="b" data-a="cx">Fechar</button></div><div id="paper"></div></div>
+<div class="ts" id="ts"></div>
+<script src="js/db.js"></script><script src="js/core.js"></script><script src="js/admin.js"></script><script src="js/app.js"></script>
+</body></html>
